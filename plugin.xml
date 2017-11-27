@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	id="cordova-plugin-unionpay"
-	version="1.0.0">
+	version="1.1.0">
 
 	<name>Unionpay</name>
 	<description>A cordova plugin for Unionpay.</description>
@@ -47,13 +47,12 @@
 
 		<source-file src="src/android/Unionpay.java" target-dir="src/com/santinowu/cordova/unionpay" />
 		<source-file src="libs/android/UPPayAssistEx.jar" target-dir="libs" />
-		<source-file src="libs/android/UPPayPluginEx.jar" target-dir="libs" />
-		<source-file src="libs/android/arm64-v8a/libentryex.so" target-dir="libs/arm64-v8a" />
-		<source-file src="libs/android/armeabi/libentryex.so" target-dir="libs/armeabi" />
-		<source-file src="libs/android/armeabi-v7a/libentryex.so" target-dir="libs/armeabi-v7a" />
-		<source-file src="libs/android/mips/libentryex.so" target-dir="libs/mips" />
-		<source-file src="libs/android/x86/libentryex.so" target-dir="libs/x86" />
-		<source-file src="libs/android/data.bin" target-dir="assets" />
+		<source-file src="libs/android/UPPayPluginExPro.jar" target-dir="libs" />
+		<source-file src="libs/android/armeabi/libentryexpro.so" target-dir="libs/armeabi" />
+		<source-file src="libs/android/armeabi/libuptsmaddon.so" target-dir="libs/armeabi" />
+    <source-file src="libs/android/armeabi-v7a/libentryexpro.so" target-dir="libs/armeabi-v7a" />
+    <source-file src="libs/android/armeabi-v7a/libuptsmaddon.so" target-dir="libs/armeabi-v7a" />
+    <source-file src="libs/android/data.bin" target-dir="assets" />
 	</platform>
 
 	<platform name="ios">
